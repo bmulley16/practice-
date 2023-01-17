@@ -1,3 +1,4 @@
+`use strict`
 let markWeight = 78;
 let markHeigh = 1.69;
 
@@ -43,3 +44,14 @@ else if (koalasAvgScore > dolphinsAvgScore && koalasAvgScore >= 100) {
 else {
     console.log(`Nobody wins the trophy`)
 }
+
+// 15% bill between 50 and 300 where 20% if different
+
+const bill = 250;
+const total = bill >= 50 && bill <= 300 ? bill * 1.15 : bill * 1.20;
+console.log(`Your total is $${total}. Your bill was $${bill} and the ammount you tipped was $${total - bill}`);
+
+
+
+
+
